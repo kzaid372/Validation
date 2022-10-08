@@ -1,0 +1,32 @@
+body{
+    background: #D2D2D2;
+}
+fieldset{
+    width: 50%;
+    background-color: white;
+    border-radius: 1rem;
+    margin: 5rem auto;
+    transition: all 400ms;
+    border-color: coral;
+}
+fieldset:hover{
+    background-color: blanchedalmond;
+}
+legend{
+    font-size:2rem;
+}
+input,label,select{
+    font-size:1rem;
+    transition: all 400ms;
+}
+input:hover,label:hover,select:hover{
+border-color: coral;
+}
+input,select{
+    border-radius: .3rem;
+}
+
+input[type=submit]:hover,input[type=reset]:hover {
+    background-color: black;
+    color: white;
+}

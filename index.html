@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <fieldset>
+        <legend align="center">Registration Form</legend>
+
+        <form action="" onsubmit="return validation()"  name="regForm" >
+
+            <table cellSpacing="5" cellpadding="5">
+                <tr>
+                    <td>
+                        <label for="fname">First Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="fname" >
+                    </td>
+                    <td>
+                        <span id="fname"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="lname">Last Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="lname" >
+                    </td>
+                    <td>
+                        <span id="lname"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="age">Age</label>
+                    </td>
+                    <td>
+                        <input type="number" name="age" >
+                    </td>
+                    <td>
+                        <span id="age"></span>
+                    </td>
+                </tr>
+               
+                <tr>
+                    <td>
+                        <label for="number">Ph Number</label>
+                    </td>
+                    <td>
+                        <input type="number" name="number" >
+                    </td>
+                    <td>
+                        <span id="number"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" >
+                    </td>
+                    <td>
+                        <span id="email"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="password">Password</label>
+                    </td>
+                    <td>
+                        <input type="password" name="password" >
+                    </td>
+                    <td>
+                        <span id="password"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="conpassword">Con Password</label>
+                    </td>
+                    <td>
+                        <input type="password" name="conpassword" >
+                    </td>
+                    <td>
+                        <span id="conpassword"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Gender</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender"  value="male">Male <input type="radio" name="gender"  value="female">Female 
+                    </td>
+                    <td>
+                        <span id="gender"></span>
+                    </td>
+                </tr>
+                    <td>
+                        <label for="skill">Skills</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="skill"  value="css">CSS <input type="checkbox" name="skill"  value="html">HTML
+                    </td>
+                    <td>
+                        <span id="skill"></span>
+                    </td>
+                </tr>
+                    <td>
+                       
+                    </td>
+                    <td>
+                        <input type="checkbox" name="skill"  value="javascript">JavaScript <input type="checkbox" name="skill"  value="reactjs">Reactjs 
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        <input type="checkbox" name="skill"  value="angular">Angular <input type="checkbox" name="skill"  value="nodejs">Nodejs 
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="date">Select Date</label>
+                     </td>
+                    <td> 
+                        <input type="date" name="date">
+                    </td>
+                    <td>
+                        <span id="date" ></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                       <label for="country">Country</label> </td>
+                    <td>
+                        <select name="country" id="ucountry">
+                            <option value="">Select Country</option>
+                            <option value="ind">India</option>
+                            <option value="usa">United State</option>
+                            <option value="uk">London</option>
+                            <option value="japan">Japan</option>
+                        </select>
+                    </td>
+                    <td>
+                        <span id="country"></span>
+                    </td>
+                </tr>
+           
+          
+
+           <tr>
+            <td> 
+                <label for="time">Pref Time</label> </td>
+            <td>
+                <input type="time" name="time">
+
+            </td>
+            <td>
+                <span id="time"></span>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+                <label for="file">Upload Resume</label>
+            </td>
+            <td>
+                <input type="file" name="file">
+            </td>
+            <td>
+                <span id="file"></span>
+            </td>
+           </tr>
+           <tr>
+            <td>
+                <label for="term">Accept</label>
+            </td>
+            <td>
+                <input type="radio" name="term">Terms & Condition...
+            </td>
+            <td>
+                <span id="term"></span>
+            </td>
+           </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" name="submit" >
+                    </td>
+                    <td>
+                        <input type="reset" name="reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
